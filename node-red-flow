@@ -1,0 +1,3648 @@
+[
+    {
+        "id": "365bc2d01be8f7fe",
+        "type": "tab",
+        "label": "Inkbird iBBQ-4T",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ae7d580e664a2676",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 415,
+        "y": 90,
+        "wires": [
+            [
+                "93021323d5e78cb3",
+                "2c712505197cf019"
+            ]
+        ]
+    },
+    {
+        "id": "659e650f20e91715",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 1300,
+        "y": 720,
+        "wires": [
+            [
+                "218d284f84de6f96",
+                "2fac4c5400bfb286",
+                "3fbb077308c308d6"
+            ]
+        ]
+    },
+    {
+        "id": "3ec500b9b68279f9",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 415,
+        "y": 915,
+        "wires": [
+            [
+                "6430530178cfdb2e",
+                "0cd2dd92effeb023"
+            ]
+        ]
+    },
+    {
+        "id": "1324103f66ce2c98",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 1310,
+        "y": 1545,
+        "wires": [
+            [
+                "dc45adfd56703b48",
+                "c7d8224cf42be0e0",
+                "09a3f8a1b3464c07"
+            ]
+        ]
+    },
+    {
+        "id": "1cf549eb544202c7",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 390,
+        "y": 1720,
+        "wires": [
+            [
+                "9d568f9be1a6db8b",
+                "c0cd7420e36a5a82"
+            ]
+        ]
+    },
+    {
+        "id": "2e958bdee293abf1",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 1320,
+        "y": 2350,
+        "wires": [
+            [
+                "81a4dd681c8b29f9",
+                "01a67721371a13d5",
+                "10ce39e539ddc5c9"
+            ]
+        ]
+    },
+    {
+        "id": "91bb964c3695d1e2",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 1395,
+        "y": 3180,
+        "wires": [
+            [
+                "93941bef83d7aab9",
+                "64156f9157e44d21",
+                "21300225982a7479",
+                "c0d62582bea6eccd"
+            ]
+        ]
+    },
+    {
+        "id": "e9038076ca7ee99d",
+        "type": "junction",
+        "z": "365bc2d01be8f7fe",
+        "x": 1345,
+        "y": 3645,
+        "wires": [
+            [
+                "3b4301c120eaf98a",
+                "ed582f5a99dceda1",
+                "ac1cef74e6ce135f"
+            ]
+        ]
+    },
+    {
+        "id": "7553053f84406e19",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 1 Timer Finished",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "timer.inkbird_ibbq4t_probe_1_timer",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "idle",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 170,
+        "wires": [
+            [
+                "92a3bcbaacfb5892",
+                "ae7d580e664a2676"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c1f2b17bd0db07b1",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 1 Timer Complete Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_1_timer_complete",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 780,
+        "y": 175,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c0d675c2c4a0abf",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 385,
+        "y": 295,
+        "wires": [
+            [
+                "92a3bcbaacfb5892"
+            ]
+        ]
+    },
+    {
+        "id": "92a3bcbaacfb5892",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 500,
+        "y": 205,
+        "wires": [
+            [
+                "c1f2b17bd0db07b1"
+            ],
+            [
+                "027614cfbecea12f"
+            ]
+        ]
+    },
+    {
+        "id": "93021323d5e78cb3",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 750,
+        "y": 90,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d7662ac004a9561",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Timer Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "1c0d675c2c4a0abf"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "027614cfbecea12f",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 730,
+        "y": 235,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9baceee12b900c96",
+        "type": "comment",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 1 Alarms",
+        "info": "",
+        "x": 165,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ea07c1a7c7461aa3",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 1 Temp",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "sensor.inkbird_ibbq4t_probe_1",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "0",
+        "halt_if_type": "str",
+        "halt_if_compare": "is_not",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 165,
+        "y": 490,
+        "wires": [
+            [
+                "8a7b73b942318a53"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ac4fbbb9d082ca7f",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 1 Temp Reached Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_1_temp_complete",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1775,
+        "y": 515,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4e0dba3bb93fe77",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 720,
+        "wires": [
+            [
+                "659e650f20e91715"
+            ]
+        ]
+    },
+    {
+        "id": "218d284f84de6f96",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 1450,
+        "y": 570,
+        "wires": [
+            [
+                "ac4fbbb9d082ca7f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5a5d1f46d89ca3e7",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1130,
+        "y": 390,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4331f5f69c506f0",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Timer Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 900,
+        "y": 720,
+        "wires": [
+            [
+                "f4e0dba3bb93fe77"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3fbb077308c308d6",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop iBBQ Alexa Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1735,
+        "y": 690,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6f4d8acd4e00248",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Temp Equal to Probe 1 Max Temp?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "payload",
+        "halt_if_type": "msg",
+        "halt_if_compare": "lte",
+        "entity_id": "input_number.inkbird_ibbq4t_probe_1_high_temp",
+        "state_type": "num",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 505,
+        "y": 490,
+        "wires": [
+            [
+                "c5d94fa1314fceac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c5d94fa1314fceac",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Did Max Temp Run Already?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_1_high_temp_run_once",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 810,
+        "y": 490,
+        "wires": [
+            [
+                "1e1b3880820eb8d5",
+                "5a5d1f46d89ca3e7",
+                "0ed0ccb3b6f9d795"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1e1b3880820eb8d5",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_1_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1110,
+        "y": 570,
+        "wires": [
+            [
+                "218d284f84de6f96"
+            ]
+        ]
+    },
+    {
+        "id": "2fac4c5400bfb286",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn Off Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_1_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1745,
+        "y": 750,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27989fb6e1ba9a25",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 2 Timer Finished",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "timer.inkbird_ibbq4t_probe_2_timer",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "idle",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 195,
+        "y": 995,
+        "wires": [
+            [
+                "f4598da4d203129e",
+                "3ec500b9b68279f9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "106fdbe93e91b67b",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 2 Timer Complete Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_2_timer_complete",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 785,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edebfac0b2fc020a",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1120,
+        "wires": [
+            [
+                "f4598da4d203129e"
+            ]
+        ]
+    },
+    {
+        "id": "f4598da4d203129e",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 505,
+        "y": 1030,
+        "wires": [
+            [
+                "106fdbe93e91b67b"
+            ],
+            [
+                "4284158de3ad6395"
+            ]
+        ]
+    },
+    {
+        "id": "6430530178cfdb2e",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 755,
+        "y": 915,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcae9f7d086cc083",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Timer Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 155,
+        "y": 1125,
+        "wires": [
+            [
+                "edebfac0b2fc020a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4284158de3ad6395",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 735,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98580aad5857a9f3",
+        "type": "comment",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 2 Alarms",
+        "info": "",
+        "x": 170,
+        "y": 885,
+        "wires": []
+    },
+    {
+        "id": "65ea262b7acb2287",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 2 Temp",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "sensor.inkbird_ibbq4t_probe_2",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "0",
+        "halt_if_type": "str",
+        "halt_if_compare": "is_not",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 170,
+        "y": 1315,
+        "wires": [
+            [
+                "175ff53e3edae62a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "432cf694941d1041",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 2 Temp Reached Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_2_temp_complete",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1785,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef46646f86c3cd45",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 1545,
+        "wires": [
+            [
+                "1324103f66ce2c98"
+            ]
+        ]
+    },
+    {
+        "id": "dc45adfd56703b48",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 1460,
+        "y": 1395,
+        "wires": [
+            [
+                "432cf694941d1041"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dcd1db252c2a6bcd",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1140,
+        "y": 1215,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3893cca11690fd09",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Timer Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 910,
+        "y": 1545,
+        "wires": [
+            [
+                "ef46646f86c3cd45"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c7d8224cf42be0e0",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop iBBQ Alexa Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1745,
+        "y": 1515,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75cdf38842887a2f",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Temp Equal to Probe 2 Max Temp?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "payload",
+        "halt_if_type": "msg",
+        "halt_if_compare": "lte",
+        "entity_id": "input_number.inkbird_ibbq4t_probe_2_high_temp",
+        "state_type": "num",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 515,
+        "y": 1315,
+        "wires": [
+            [
+                "b88a0d54444272a6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b88a0d54444272a6",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Did Max Temp Run Already?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_2_high_temp_run_once",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 820,
+        "y": 1315,
+        "wires": [
+            [
+                "4c31347647ca7b1a",
+                "dcd1db252c2a6bcd",
+                "aa52b85714fef7e5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4c31347647ca7b1a",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_2_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1120,
+        "y": 1395,
+        "wires": [
+            [
+                "dc45adfd56703b48"
+            ]
+        ]
+    },
+    {
+        "id": "09a3f8a1b3464c07",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn Off Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_2_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1755,
+        "y": 1575,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a80511bed81c9573",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 3 Timer Finished",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "timer.inkbird_ibbq4t_probe_3_timer",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "idle",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 195,
+        "y": 1800,
+        "wires": [
+            [
+                "e9b7a1c7061724f6",
+                "1cf549eb544202c7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a7590dd9bf6aba8d",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 3 Timer Complete Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_3_timer_complete",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 785,
+        "y": 1805,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9477a957826def4f",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1925,
+        "wires": [
+            [
+                "e9b7a1c7061724f6"
+            ]
+        ]
+    },
+    {
+        "id": "e9b7a1c7061724f6",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 505,
+        "y": 1835,
+        "wires": [
+            [
+                "a7590dd9bf6aba8d"
+            ],
+            [
+                "609efb2d0ea29659"
+            ]
+        ]
+    },
+    {
+        "id": "9d568f9be1a6db8b",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 755,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63f92433c188658e",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Timer Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 155,
+        "y": 1930,
+        "wires": [
+            [
+                "9477a957826def4f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "609efb2d0ea29659",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 735,
+        "y": 1865,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b02ddd30ef30088",
+        "type": "comment",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 3 Alarms",
+        "info": "",
+        "x": 170,
+        "y": 1690,
+        "wires": []
+    },
+    {
+        "id": "5b4c6454a6a861c1",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 3 Temp",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "sensor.inkbird_ibbq4t_probe_3",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "0",
+        "halt_if_type": "str",
+        "halt_if_compare": "is_not",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 170,
+        "y": 2120,
+        "wires": [
+            [
+                "dc2fd2d9cec5b941"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c6b18366bff68d0a",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 3 Temp Reached Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_3_temp_complete",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1795,
+        "y": 2145,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c4bb4938c338400",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 2350,
+        "wires": [
+            [
+                "2e958bdee293abf1"
+            ]
+        ]
+    },
+    {
+        "id": "81a4dd681c8b29f9",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 1470,
+        "y": 2200,
+        "wires": [
+            [
+                "c6b18366bff68d0a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "72062005f3e3ce7c",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1150,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8036fdf7830e13ae",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Timer Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 920,
+        "y": 2350,
+        "wires": [
+            [
+                "3c4bb4938c338400"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "10ce39e539ddc5c9",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop iBBQ Alexa Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1755,
+        "y": 2320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e3152dc31c89ee4",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Temp Equal to Probe 3 Max Temp?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "payload",
+        "halt_if_type": "msg",
+        "halt_if_compare": "lte",
+        "entity_id": "input_number.inkbird_ibbq4t_probe_3_high_temp",
+        "state_type": "num",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 525,
+        "y": 2120,
+        "wires": [
+            [
+                "b0f72a58c0434fc4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b0f72a58c0434fc4",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Did Max Temp Run Already?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_3_high_temp_run_once",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 830,
+        "y": 2120,
+        "wires": [
+            [
+                "ad3c6a08f1d03a65",
+                "72062005f3e3ce7c",
+                "96abef0e71e7ddb6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ad3c6a08f1d03a65",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_3_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1130,
+        "y": 2200,
+        "wires": [
+            [
+                "81a4dd681c8b29f9"
+            ]
+        ]
+    },
+    {
+        "id": "01a67721371a13d5",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn Off Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_3_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1765,
+        "y": 2380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b155567a314b8150",
+        "type": "comment",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 4 Alarms (Temp Only)",
+        "info": "",
+        "x": 210,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "d55aa6bfd7d82b48",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Probe 4 Temp",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "sensor.inkbird_ibbq4t_probe_4",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "num",
+        "haltifstate": "0",
+        "halt_if_type": "str",
+        "halt_if_compare": "is_not",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 160,
+        "y": 3075,
+        "wires": [
+            [
+                "2d6867ab87f58b0b",
+                "4e02be8d9a45455f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "aaa446885b4a6134",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 4 Temp Low Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_4_temp_low",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1815,
+        "y": 2975,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b8f888294b2fc48",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 3180,
+        "wires": [
+            [
+                "91bb964c3695d1e2"
+            ]
+        ]
+    },
+    {
+        "id": "93941bef83d7aab9",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 1500,
+        "y": 3030,
+        "wires": [
+            [
+                "aaa446885b4a6134"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "978dce2764bff157",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1180,
+        "y": 2850,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "681f9c692fe7049b",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Low Temp Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 920,
+        "y": 3180,
+        "wires": [
+            [
+                "8b8f888294b2fc48"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c0d62582bea6eccd",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop iBBQ Alexa Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1785,
+        "y": 3140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a820ab42015d2f7",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Temp Equal to Probe 4 Min Temp?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "payload",
+        "halt_if_type": "msg",
+        "halt_if_compare": "gt",
+        "entity_id": "input_number.inkbird_ibbq4t_probe_4_low_temp",
+        "state_type": "num",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 545,
+        "y": 2885,
+        "wires": [
+            [
+                "6547d7b71921405d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8ab51874509a1572",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Did Min Temp Run Already?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_4_low_temp_run_once",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 860,
+        "y": 2950,
+        "wires": [
+            [
+                "e478e3a56cfda79d",
+                "978dce2764bff157",
+                "7abf0dd02780db0f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e478e3a56cfda79d",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_4_low_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1160,
+        "y": 3030,
+        "wires": [
+            [
+                "93941bef83d7aab9"
+            ]
+        ]
+    },
+    {
+        "id": "21300225982a7479",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn Off Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_4_low_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1795,
+        "y": 3200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "83f5ca326823c34d",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Call Probe 3 Temp High Script",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "inkbird_ibbq4t_probe_4_temp_high",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1810,
+        "y": 3440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69f86259f63ba1b4",
+        "type": "change",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 3645,
+        "wires": [
+            [
+                "e9038076ca7ee99d"
+            ]
+        ]
+    },
+    {
+        "id": "3b4301c120eaf98a",
+        "type": "looptimer",
+        "z": "365bc2d01be8f7fe",
+        "duration": "20",
+        "units": "Second",
+        "maxloops": "5",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Minute",
+        "name": "Every 20 Seconds",
+        "x": 1495,
+        "y": 3495,
+        "wires": [
+            [
+                "83f5ca326823c34d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "72b8fa3bd04f6b81",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "High Temp Alarm Off",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_stop_alarm",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 935,
+        "y": 3645,
+        "wires": [
+            [
+                "69f86259f63ba1b4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ac1cef74e6ce135f",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Stop iBBQ Alexa Alarm",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "media_player",
+        "service": "media_stop",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.kitchen_echo_show"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1780,
+        "y": 3615,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed8d00393c68e847",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Temp Equal to Probe 4 Max Temp?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "payload",
+        "halt_if_type": "msg",
+        "halt_if_compare": "lte",
+        "entity_id": "input_number.inkbird_ibbq4t_probe_4_high_temp",
+        "state_type": "num",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 550,
+        "y": 3415,
+        "wires": [
+            [
+                "db777661630b27d0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "db777661630b27d0",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Did Max Temp Run Already?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_3_high_temp_run_once",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 855,
+        "y": 3415,
+        "wires": [
+            [
+                "7ed1b5baa2c3c52e",
+                "771de58d6d37f5a8",
+                "b768da94368bbf04"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7ed1b5baa2c3c52e",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_3_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1155,
+        "y": 3495,
+        "wires": [
+            [
+                "3b4301c120eaf98a"
+            ]
+        ]
+    },
+    {
+        "id": "ed582f5a99dceda1",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn Off Run Once Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_3_high_temp_run_once"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1790,
+        "y": 3675,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "771de58d6d37f5a8",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "iBBQ Alexa Alarm Is On",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_stop_alarm"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1175,
+        "y": 3315,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6547d7b71921405d",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Low Temp Reached Yet?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_4_low_temp_reached",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 540,
+        "y": 2980,
+        "wires": [
+            [
+                "8ab51874509a1572"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dd922bc4479d64a3",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Temp Equal to Probe 4 Min Temp?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "payload",
+        "halt_if_type": "msg",
+        "halt_if_compare": "lte",
+        "entity_id": "input_number.inkbird_ibbq4t_probe_4_low_temp",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 550,
+        "y": 2710,
+        "wires": [
+            [
+                "b1c085a4115b45f3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b1c085a4115b45f3",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn On Low Temped Reached Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_4_low_temp_reached"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 950,
+        "y": 2700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64156f9157e44d21",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Turn Off Low Temp Reached Toggle",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.inkbird_ibbq4t_probe_4_low_temp_reached"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1825,
+        "y": 3260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ed0ccb3b6f9d795",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Probe 1 Temperature Reached\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1120,
+        "y": 335,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c712505197cf019",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Probe 1 Timer Complete\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 740,
+        "y": 35,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0cd2dd92effeb023",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Probe 2 Timer Complete\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 745,
+        "y": 865,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa52b85714fef7e5",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Probe 2 Temperature Reached\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1130,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0cd7420e36a5a82",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Probe 3 Timer Complete\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 810,
+        "y": 1670,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96abef0e71e7ddb6",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Probe 3 Temperature Reached\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1140,
+        "y": 1965,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7abf0dd02780db0f",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Smoker Temp too Low\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1170,
+        "y": 2795,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b768da94368bbf04",
+        "type": "api-call-service",
+        "z": "365bc2d01be8f7fe",
+        "name": "Notify Aaron's Phone",
+        "server": "7639d568.0b48ec",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "mobile_app_aaron_s_phone",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"Smoker Temp too High\",\"title\":\"Inkbird iBBQ-4T\",\"data\":{\"actions\":[{\"action\":\"ALEXAOFF\",\"title\":\"Turn Off Alexa Alarm\"}]}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 1165,
+        "y": 3260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c04659c9cd37af2",
+        "type": "inject",
+        "z": "365bc2d01be8f7fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 970,
+        "y": 3125,
+        "wires": [
+            [
+                "8b8f888294b2fc48"
+            ]
+        ]
+    },
+    {
+        "id": "9b6a3b93b6531d32",
+        "type": "inject",
+        "z": "365bc2d01be8f7fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 960,
+        "y": 3595,
+        "wires": [
+            [
+                "69f86259f63ba1b4"
+            ]
+        ]
+    },
+    {
+        "id": "2d6867ab87f58b0b",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is High Temp Alarm Activated?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_4_high_temp_activate",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 255,
+        "y": 3290,
+        "wires": [
+            [
+                "ed8d00393c68e847"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4e02be8d9a45455f",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is Low Temp Alarm Activated?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_4_low_temp_activate",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 255,
+        "y": 2805,
+        "wires": [
+            [
+                "dd922bc4479d64a3",
+                "0a820ab42015d2f7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dc2fd2d9cec5b941",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is High Temp Alarm Activated?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_3_high_temp_activate",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 375,
+        "y": 2245,
+        "wires": [
+            [
+                "1e3152dc31c89ee4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "175ff53e3edae62a",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is High Temp Alarm Activated?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_2_high_temp_activate",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 365,
+        "y": 1415,
+        "wires": [
+            [
+                "75cdf38842887a2f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8a7b73b942318a53",
+        "type": "api-current-state",
+        "z": "365bc2d01be8f7fe",
+        "name": "Is High Temp Alarm Activated?",
+        "server": "7639d568.0b48ec",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.inkbird_ibbq4t_probe_1_high_temp_activate",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 350,
+        "y": 620,
+        "wires": [
+            [
+                "c6f4d8acd4e00248"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "700eb41428e1fd07",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "High Temp Alarm Deactivate",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_probe_4_high_temp_activate",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 905,
+        "y": 3695,
+        "wires": [
+            [
+                "69f86259f63ba1b4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "20ac347ec4a4d81d",
+        "type": "server-state-changed",
+        "z": "365bc2d01be8f7fe",
+        "name": "Low Temp Alarm Deactivate",
+        "server": "7639d568.0b48ec",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.inkbird_ibbq4t_probe_4_low_temp_activate",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 890,
+        "y": 3230,
+        "wires": [
+            [
+                "8b8f888294b2fc48"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7639d568.0b48ec",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 4,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": false,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30,
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": "at: ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m"
+    }
+]
